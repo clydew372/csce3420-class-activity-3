@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Clyde Williams's independent CSCE 3420 learning profile.">
+    <title>Clyde Williams | Learning Profile</title>
+</head>
+<body>
+    <header>
+        <p>Independent Semantic Profile</p>
+        <h1>Clyde Williams: Learning Profile</h1>
+        <p>A compact record of interests, practice habits, and next steps.</p>
+    </header>
+
+    <nav aria-label="Profile navigation">
+        <a href="index.html">Field guide home</a>
+        <a href="#interests">Current interests</a>
+        <a href="https://www.unt.edu/">University of North Texas</a>
+    </nav>
+
+    <main>
+        <article aria-labelledby="profile-heading">
+            <h2 id="profile-heading">About the learner</h2>
+            <p>I am Clyde Williams, a CSCE 3420 student building confidence with documents that are understandable before visual styling is added.</p>
+            <p>My current goal is to connect a page's content, structure, and evidence so each choice can be inspected directly in source and in the browser.</p>
+            <figure>
+                <img src="images/semantic-map.svg" alt="Landmark diagram showing how a page separates header, navigation, main, aside, and footer" width="640">
+                <figcaption>The diagram represents the kind of relationship I want my markup to communicate.</figcaption>
+            </figure>
+        </article>
+
+        <section id="interests" aria-labelledby="interests-heading">
+            <h2 id="interests-heading">Current interests</h2>
+            <p>I am focusing on small habits that make a document easier to navigate and maintain.</p>
+            <ul>
+                <li>Writing headings that describe the content below them</li>
+                <li>Testing keyboard-friendly links and labeled controls</li>
+                <li>Using Git history as a record of design decisions</li>
+            </ul>
+        </section>
+
+        <section aria-labelledby="snapshot-heading">
+            <h2 id="snapshot-heading">Skill snapshot</h2>
+            <p>This table pairs a practice area with the evidence I use and the next improvement I plan.</p>
+            <table>
+                <caption>Independent learning snapshot</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Practice area</th>
+                        <th scope="col">Current evidence</th>
+                        <th scope="col">Next improvement</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Semantic structure</td>
+                        <td>Landmark outline</td>
+                        <td>Review nesting</td>
+                    </tr>
+                    <tr>
+                        <td>Accessibility</td>
+                        <td>Alt text and labels</td>
+                        <td>Test with keyboard</td>
+                    </tr>
+                    <tr>
+                        <td>Debugging</td>
+                        <td>Validator report</td>
+                        <td>Explain each correction</td>
+                    </tr>
+                    <tr>
+                        <td>Git workflow</td>
+                        <td>Staged commits</td>
+                        <td>Write clearer summaries</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <aside aria-labelledby="principle-heading">
+            <h2 id="principle-heading">Study principle</h2>
+            <p>If an element cannot explain its role, I revisit the content before adding presentation rules.</p>
+        </aside>
+
+        <section id="connect" aria-labelledby="connect-heading">
+            <h2 id="connect-heading">Connect about HTML</h2>
+            <p>This form is a practice interface for sharing a focused question about the profile topics.</p>
+            <form action="#connect" method="post">
+                <p>
+                    <label for="profile-name">Name:</label>
+                    <input type="text" id="profile-name" name="profile-name" required>
+                </p>
+                <p>
+                    <label for="profile-email">Email:</label>
+                    <input type="email" id="profile-email" name="profile-email" required>
+                </p>
+                <p>
+                    <label for="profile-topic">Question area:</label>
+                    <select id="profile-topic" name="profile-topic">
+                        <option value="structure">Document structure</option>
+                        <option value="accessibility">Accessibility</option>
+                        <option value="workflow">Git workflow</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="profile-message">Question:</label>
+                    <textarea id="profile-message" name="profile-message" rows="4" cols="40"></textarea>
+                </p>
+                <button type="submit">Send question</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Independent profile by Clyde Williams for CSCE 3420. <a href="#profile-heading">Back to profile</a></p>
+    </footer>
+</body>
+</html>

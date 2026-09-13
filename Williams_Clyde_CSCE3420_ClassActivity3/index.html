@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A CSCE 3420 field guide to semantic and accessible HTML structure.">
+    <title>Semantic HTML Field Guide | CSCE 3420</title>
+</head>
+<body>
+    <header>
+        <p><strong>CSCE 3420</strong> | Internet Programming</p>
+        <h1>Building Accessible Web Pages</h1>
+        <p>A hands-on field guide to meaningful HTML structure.</p>
+    </header>
+
+    <nav aria-label="Primary navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pages/about.html">About</a></li>
+            <li><a href="#coursework">Coursework</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">MDN HTML Reference</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="overview" aria-labelledby="overview-heading">
+            <h2 id="overview-heading">Why structure matters</h2>
+            <p>Semantic HTML gives each region a meaningful role that browsers, assistive technology, and people can understand.</p>
+            <p>This project focuses on <strong>clear document structure</strong> and <em>accessible choices</em> that remain useful beyond visual styling.</p>
+            <figure>
+                <img src="images/semantic-map.svg" alt="Diagram showing header, navigation, main content, aside, and footer landmarks" width="640">
+                <figcaption>A semantic page map connects each landmark to its purpose.</figcaption>
+            </figure>
+        </section>
+
+        <section id="coursework" aria-labelledby="coursework-heading">
+            <h2 id="coursework-heading">Coursework map</h2>
+            <p>The activity moves from document foundations to <strong>working evidence</strong> for navigation, accessibility, and validation.</p>
+            <article>
+                <h3>Start with meaning</h3>
+                <p>Choose elements for the role their content plays, then use CSS later to control presentation. A section groups related ideas, while an article can stand on its own.</p>
+            </article>
+        </section>
+
+        <aside aria-labelledby="checkpoint-heading">
+            <h2 id="checkpoint-heading">Accessibility checkpoint</h2>
+            <p>Ask whether the structure still makes sense when visual appearance is unavailable. Useful labels, headings, and alternative text make the same content easier to navigate.</p>
+        </aside>
+
+        <section id="tools" aria-labelledby="tools-heading">
+            <h2 id="tools-heading">Tools and materials</h2>
+            <p>These topics support a page that communicates clearly to both people and browsers.</p>
+            <ul>
+                <li>Semantic landmarks and heading hierarchy</li>
+                <li>Accessible images and alternative text</li>
+                <li>Relative, fragment, and external links</li>
+                <li>Forms, tables, and validation</li>
+            </ul>
+        </section>
+
+        <section id="workflow" aria-labelledby="workflow-heading">
+            <h2 id="workflow-heading">Development workflow</h2>
+            <p>The ordered steps reflect the sequence used to build and verify this project.</p>
+            <ol>
+                <li>Plan the document structure and content purpose.</li>
+                <li>Write the HTML5 foundation and semantic landmarks.</li>
+                <li>Add links, media, lists, tables, and form controls.</li>
+                <li>Inspect the DOM, repair debug markup, and validate.</li>
+                <li>Commit meaningful stages and publish the project.</li>
+            </ol>
+        </section>
+
+        <section id="milestones" aria-labelledby="milestones-heading">
+            <h2 id="milestones-heading">Practice milestones</h2>
+            <p>The table records a row-and-column relationship among a skill, its evidence, and its result.</p>
+            <table>
+                <caption>Semantic HTML practice milestones</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Milestone</th>
+                        <th scope="col">Evidence</th>
+                        <th scope="col">Outcome</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Structure</td>
+                        <td>Landmark outline</td>
+                        <td>Page regions have meaning</td>
+                    </tr>
+                    <tr>
+                        <td>Navigation</td>
+                        <td>Four tested links</td>
+                        <td>Destinations resolve correctly</td>
+                    </tr>
+                    <tr>
+                        <td>Accessibility</td>
+                        <td>Alt text and labels</td>
+                        <td>Controls and media are usable</td>
+                    </tr>
+                    <tr>
+                        <td>Quality</td>
+                        <td>Validator and Git log</td>
+                        <td>Changes are checked and traceable</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="contact" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Send a study note</h2>
+            <p>Use this example form to practice labels, control types, and a clear submission action.</p>
+            <form action="#contact" method="post">
+                <p>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </p>
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </p>
+                <p>
+                    <label for="topic">Topic:</label>
+                    <select id="topic" name="topic">
+                        <option value="semantics">Semantic HTML</option>
+                        <option value="accessibility">Accessibility</option>
+                        <option value="validation">Validation</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" cols="40"></textarea>
+                </p>
+                <p>
+                    <input type="checkbox" id="follow-up" name="follow-up">
+                    <label for="follow-up">I would like a follow-up reply.</label>
+                </p>
+                <button type="submit">Submit study note</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Created for CSCE 3420 by Clyde Williams. <a href="#overview">Back to top</a></p>
+    </footer>
+</body>
+</html>
