@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A CSCE 3420 field guide to semantic and accessible HTML structure.">
+    <title>Semantic HTML Field Guide | CSCE 3420</title>
+</head>
+<body>
+    <header>
+        <p>CSCE 3420 | Internet Programming</p>
+        <h1>Building Accessible Web Pages</h1>
+        <p>A hands-on field guide to meaningful HTML structure.</p>
+    </header>
+
+    <nav aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="pages/about.html">About</a>
+        <a href="#coursework">Coursework</a>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">MDN HTML Reference</a>
+    </nav>
+
+    <main>
+        <section id="overview" aria-labelledby="overview-heading">
+            <h2 id="overview-heading">Why structure matters</h2>
+            <p>Semantic HTML gives each region a meaningful role that browsers, assistive technology, and people can understand.</p>
+            <p>This project focuses on <strong>clear document structure</strong> and <em>accessible choices</em> that remain useful beyond visual styling.</p>
+        </section>
+
+        <section id="coursework" aria-labelledby="coursework-heading">
+            <h2 id="coursework-heading">Coursework map</h2>
+            <p>This section will collect the page examples and practice evidence for the activity.</p>
+        </section>
+
+        <section id="practice" aria-labelledby="practice-heading">
+            <h2 id="practice-heading">Practice notes</h2>
+            <article>
+                <h3>Start with meaning</h3>
+                <p>Choose elements for the role their content plays, then use CSS later to control presentation.</p>
+            </article>
+            <aside>
+                <h3>Accessibility checkpoint</h3>
+                <p>Ask whether the structure still makes sense when visual appearance is unavailable.</p>
+            </aside>
+        </section>
+    </main>
+
+    <footer>
+        <p>Created for CSCE 3420 by Clyde Williams.</p>
+    </footer>
+</body>
+</html>
